@@ -1,0 +1,20 @@
+@import '_colors.scss';
+@import '_fonts.scss';
+@import '_urls.scss';
+@import '_mixins.scss';
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Playfair+Display+SC');
+
+// Your CSS/SCSS below this line
+body {
+	font-family: $font_0, $font_1, $font_2;
+}
+
+@for $i from 1 through 6 { // Loop that sets the font face for all headings
+  h#{7 - $i} {
+    font-family: $font_3, $font_4, $font_5;
+  }
+}
+
+h1{
+  color: $headline_color;
+}
